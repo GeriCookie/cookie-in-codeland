@@ -9,14 +9,14 @@ def is_valid_subsequence(array, sequence):
 	return False	
 
 # Solution 2
-def is_valid_subsequence(array, sequence):
-    arrayIndex = 0
-	sequenceIndex = 0
-	while arrayIndex < len(array) and sequenceIndex < len(sequence):
-		if array[arrayIndex] == sequence[sequenceIndex]:
-			arrayIndex += 1
-			sequenceIndex += 1
+def is_valid_subsequence_second(array, sequence):
+	array_index = 0
+	sequence_index = 0
+	while array_index < len(array) and sequence_index < len(sequence):
+		if array[array_index] == sequence[sequence_index]:
+			array_index += 1
+			sequence_index += 1
 		else:
-			arrayIndex += 1
-	return sequenceIndex == len(sequence)
+			array_index += 1
+	return sequence_index == len(sequence)
 
